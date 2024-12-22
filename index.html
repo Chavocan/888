@@ -4,39 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>888Crate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
     <style>
         /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Crimson Text', serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-            line-height: 1.6;
+            background-color: #2d2d2d;
+            color: #f8f8f8;
+            line-height: 1.8;
         }
         h1, h2, h3 {
-            color: #4A4A8A;
+            color: #ff6f61;
+            text-align: center;
+        }
+        p, li {
+            font-size: 1.2rem;
+            text-align: center;
         }
         a {
             text-decoration: none;
-            color: #FF6F61;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 0 1rem;
+            color: #ff6f61;
         }
 
         /* Header */
         header {
-            background-color: #4A4A8A;
-            color: #fff;
-            text-align: center;
+            background-color: #1e1e1e;
             padding: 2rem 0;
+            text-align: center;
         }
         header h1 {
+            font-size: 3rem;
             margin: 0;
-            font-size: 2.5rem;
         }
 
         /* Hero Section */
@@ -44,11 +44,11 @@
             background: url('https://files.oaiusercontent.com/file-X7yGPqfE2WT3z2tp8VhAay') no-repeat center center/cover;
             text-align: center;
             color: white;
-            padding: 5rem 1rem;
+            padding: 6rem 1rem;
         }
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
         }
         .hero p {
             font-size: 1.5rem;
@@ -56,64 +56,57 @@
         }
         .btn {
             display: inline-block;
-            background: #FF6F61;
+            background: #ff6f61;
             color: white;
-            padding: 0.75rem 1.5rem;
+            padding: 0.75rem 2rem;
             border-radius: 5px;
-            text-transform: uppercase;
             font-size: 1rem;
+            text-transform: uppercase;
         }
 
         /* Section Styling */
         .section {
-            padding: 2rem 0;
-        }
-        .section h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            background: #fff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-            padding: 2rem;
-            border-radius: 8px;
+            padding: 3rem 1rem;
             text-align: center;
         }
-        .pricing ul {
-            list-style: none;
-            padding: 0;
+        .section.bg-dark {
+            background-color: #1e1e1e;
         }
-        .pricing li {
-            margin-bottom: 0.5rem;
+        .section.bg-light {
+            background-color: #3e3e3e;
         }
 
-        /* Past Boxes Section */
-        .past-boxes {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        /* Cards for Shop and Past Boxes */
+        .cards {
+            display: flex;
+            justify-content: center;
             gap: 1.5rem;
+            flex-wrap: wrap;
         }
-        .box {
-            background: white;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
+        .card {
+            background: #3e3e3e;
+            padding: 1.5rem;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
         }
-        .box img {
+        .card img {
             max-width: 100%;
             border-radius: 8px;
             margin-bottom: 1rem;
         }
+        .card h3 {
+            font-size: 1.5rem;
+            color: #ff6f61;
+        }
 
         /* Footer */
         footer {
-            background: #4A4A8A;
+            background-color: #1e1e1e;
             color: white;
-            text-align: center;
             padding: 1rem 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -131,57 +124,50 @@
         <a href="#pricing" class="btn">Discover More</a>
     </section>
 
-    <!-- About Us Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>
-                Hi there! I’m Lindsay, a small business owner from Florida with an affinity for all things divination and metaphysical. 
-                Seeing how much people love mystery boxes inspired me to start 888Crate, sharing my passion for divination tools with others.
-            </p>
-        </div>
+    <!-- About Section -->
+    <section class="section bg-dark" id="about">
+        <h2>About Us</h2>
+        <p>Hi there! I’m Lindsay, a small business owner from Florida with an affinity for all things divination and metaphysical. 
+        I started 888Crate to share my love for spiritual tools and bring magic into people's lives.</p>
     </section>
 
     <!-- Pricing Section -->
-    <section class="section pricing" id="pricing">
-        <div class="container">
-            <h2>February 2025 Box</h2>
-            <p>This month's theme: Celestial Guidance</p>
-            <ul>
-                <li>Price: $49.99</li>
-                <li>Includes: Tarot Decks, Crystals, Ritual Candles</li>
-                <li>Delivered Monthly</li>
-            </ul>
-        </div>
+    <section class="section bg-light" id="pricing">
+        <h2>February 2025 Box</h2>
+        <p>Theme: Celestial Guidance</p>
+        <p><strong>Price: $49.99</strong></p>
+        <ul>
+            <li>Tarot Cards</li>
+            <li>Crystals</li>
+            <li>Ritual Candles</li>
+        </ul>
     </section>
 
     <!-- Past Boxes Section -->
-    <section class="section" id="past-boxes">
-        <div class="container">
-            <h2>Past Boxes</h2>
-            <div class="past-boxes">
-                <div class="box">
-                    <img src="https://example.com/cosmic-guidance-image" alt="Cosmic Guidance Box">
-                    <h3>Cosmic Guidance Box</h3>
-                    <p>Includes a starry tarot deck, moonstone crystals, and lunar candles.</p>
-                </div>
-                <div class="box">
-                    <img src="https://example.com/elements-earth-image" alt="Elements of Earth Box">
-                    <h3>Elements of Earth Box</h3>
-                    <p>Features earthy rune sets, obsidian stones, and cleansing bundles.</p>
-                </div>
-                <div class="box">
-                    <img src="https://example.com/mystic-love-image" alt="Mystic Love Box">
-                    <h3>Mystic Love Box</h3>
-                    <p>Includes rose quartz, love tarot decks, and heart-shaped candles.</p>
-                </div>
+    <section class="section bg-dark" id="past-boxes">
+        <h2>Past Boxes</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://example.com/cosmic-guidance-image" alt="Cosmic Guidance Box">
+                <h3>Cosmic Guidance</h3>
+                <p>Includes tarot decks, crystals, and candles.</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/elements-earth-image" alt="Elements of Earth">
+                <h3>Elements of Earth</h3>
+                <p>Features rune sets and cleansing bundles.</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/mystic-love-image" alt="Mystic Love">
+                <h3>Mystic Love</h3>
+                <p>Includes rose quartz and love-themed tools.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 888Crate. All Rights Reserved.</p>
+        <p>&copy; 2025 888Crate. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
