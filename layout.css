@@ -3400,3 +3400,88 @@ a {
   --tw-translate-x: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
+.first-featured-image {
+  max-width: 80%; /* Reduce size by 20% */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 60%; /* Adjust width to balance space with the image */
+}
+
+.text-container h1,
+.text-container p {
+  margin: 0;
+}
+
+.image-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add spacing between the image and text */
+}
+
+.first-featured-image {
+  max-width: 80%; /* Ensure the image is 20% smaller */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 1; /* Allow the text to take up remaining space */
+  padding: 20px;
+}
+
+.image-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add spacing between the image and text */
+}
+
+.first-featured-image {
+  max-width: 80%; /* Reduce size by 20% */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.image-text-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  align-items: center;
+  gap: 20px; /* Add spacing between the image and text */
+}
+
+.text-container {
+  flex: 1; /* Allow text to take up remaining space */
+  padding: 20px;
+}
+
+.first-featured-image {
+  max-width: 60%; /* Further reduce image size */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
+
+.image-text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add spacing between the image and text */
+}
+
+.text-container {
+  flex: 1; /* Allow text to take up remaining space */
+  padding: 20px;
+  max-width: 40%; /* Constrain text width to fit beside the image */
+}
+
+.featured-uniform {
+  width: 100%;
+  max-width: 600px; /* Set a standard maximum width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}
